@@ -933,7 +933,7 @@ function GM:PlayerSpawn( ply )
 	ply:ShouldDropWeapon( ( !hl2c_server_player_respawning:GetBool() && !FORCE_PLAYER_RESPAWNING ) || OVERRIDE_PLAYER_RESPAWNING )
 	ply:AllowFlashlight( GetConVar( "mp_flashlight" ):GetBool() )
 	ply:SetCrouchedWalkSpeed( 0.3 )
-	hook.Call( "SetPlayerSpeed", GAMEMODE, ply, 190, 320 )
+	--hook.Call( "SetPlayerSpeed", GAMEMODE, ply, 190, 320 )
 	hook.Call( "PlayerSetModel", GAMEMODE, ply )
 	hook.Call( "PlayerLoadout", GAMEMODE, ply )
 
